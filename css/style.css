@@ -71,6 +71,24 @@ h1 {
   outline: 0;
 }
 
+/* progress */
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  height: 26px;
+  width: 6px;
+  border-radius: 3px;
+  background: #6e55e8;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 2px;
+  box-shadow: none;
+  background: #eee;
+  border-radius: 1.3px;
+  border: none;
+}
+
 @media (max-width: 800px) {
   .screen,
   .controls {
