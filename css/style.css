@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Questrial', sans-serif;
-  background-color: #666;
+  background-color: #ddd;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,13 +16,13 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: #222;
 }
 
 .screen {
   cursor: pointer;
   width: 60%;
-  background-color: #000 !important;
+  background-color: #222 !important;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -45,16 +45,20 @@ h1 {
   cursor: pointer;
 }
 
-.controls .fa-play {
-  color: #28a745;
+.controls .fa-play-circle-o {
+  color: #868686;
 }
 
-.controls .fa-stop {
-  color: #dc3545;
+.controls .fa-stop-circle-o {
+  color: #db5763;
 }
 
-.controls .fa-pause {
+.controls .fa-pause-circle-o {
   color: #fff;
+}
+
+.controls .fa-repeat {
+  color: #d7c854;
 }
 
 .controls .timestamp {
