@@ -6,7 +6,7 @@ const progress = document.getElementById("progress");
 const timestamp = document.getElementById("timestamp");
 
 // play and pause vid
-function toggleVidStatus(){
+const toggleVidStatus = () => {
   
   if(video.paused){
     video.play();
@@ -17,7 +17,7 @@ function toggleVidStatus(){
 }
 
 // update play/pause icon
-function updatePlayIcon(){
+const updatePlayIcon = () => {
   
   if(video.paused){
     play.innerHTML = `<i class="fa fa-play-circle-o fa-2x"></i>`;
@@ -28,7 +28,7 @@ function updatePlayIcon(){
 }
 
 // update progress and timestamp
-function updateProgress(){
+const updateProgress = () => {
   progress.value = (video.currentTime / video.duration) * 100;
 
   // minutes
@@ -48,18 +48,18 @@ function updateProgress(){
 }
 
 // set vid time
-function setVidProgress(){
+const setVidProgress = () => {
   video.currentTime = (+progress.value * video.duration) / 100;
 }
 
 // stop vid
-function stopVid(){
+const stopVid = () => {
   video.currentTime = 0;
   video.pause();
 }
 
 // replay vid
-function replayVid(){
+const replayVid = () => {
 
   video.currentTime = 0;
   video.play();
